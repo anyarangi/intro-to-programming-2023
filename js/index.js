@@ -1,7 +1,7 @@
-var today = new Date();
-var thisYear = today.getFullYear();
-var footer = document.querySelector('footer');
-var copyright = document.createElement('p');
+let today = new Date();
+let thisYear = today.getFullYear();
+let footer = document.querySelector('footer');
+let copyright = document.createElement('p');
 copyright.innerHTML = "Annah Nyarangi &copy; " + thisYear;
 footer.appendChild(copyright);
 const skills = [
@@ -10,9 +10,8 @@ const skills = [
     "CSS",
 ];
 const skillsSection = document.querySelector('#skills');
-console.log(skillsSection);
 const skillsList = skillsSection.querySelector('ul');
-for (var i = 0; i < skills.length; i++) {
+let (var i = 0; i < skills.length; i++) {
     const skill =document.createElement('li');
     skill.innerText = skills[i];
     skillsList.appendChild(skill); 
