@@ -1,7 +1,7 @@
-let today = new Date();
-let thisYear = today.getFullYear();
-let footer = document.querySelector('footer');
-let copyright = document.createElement('p');
+const today = new Date();
+const thisYear = today.getFullYear();
+const footer = document.querySelector('footer');
+const copyright = document.createElement('p');
 copyright.innerHTML = "Annah Nyarangi &copy; " + thisYear;
 footer.appendChild(copyright);
 const skills = [
@@ -11,7 +11,7 @@ const skills = [
 ];
 const skillsSection = document.querySelector('#skills');
 const skillsList = skillsSection.querySelector('ul');
-for (var i = 0; i < skills.length; i++) {
+for ( let i = 0; i < skills.length; i++) {
     const skill =document.createElement('li');
     skill.innerText = skills[i];
     skillsList.appendChild(skill); 
