@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML = "Annah Nyarangi &copy; " + thisYear;
+copyright.innerHTML =  "Annah Nyarangi &copy; "  + thisYear;
 footer.appendChild(copyright);
 const skills = [
     "JavaScript",
