@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(235, 202, 221);
+    color: rgb(1, 1, 39);
+    font-family: "Courier New", monospace;
+}
+section{
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 5px 10px;
+}
+h1{
+    font-family: "Copperplate", monospace;
+    font-size: 72px;
+    font-weight: 500;
+    color:rgb(44, 1, 44);
+}
+h2{
+    font-family: "Copperplate", monospace;
+    font-size: 36px;
+    font-weight: 300;
+    color:rgb(20, 0, 15);
+}
+
+.experience{
+    display:block;
+    background-color: azure;
+}
+#skills{
+    display: block;
+    background-color: rgb(246, 136, 114);
+}
+label{
+    background-color: papayawhip;
+    font-size: 15px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    font-size: 20px;
+}
+textarea{
+    padding: 10px;
+    width: 75%;
+    height: 150px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    resize: none;
+    font-size: 20px;
+}
+#messages{
+    display: inline-block;
+    font-family: "Sevillana", monospace;
+}
+input [type=button], [type=submit], [type=remove]{
+    padding: 5px;
+    background-color: rgb(243, 75, 120);
+    color: #000;
+    border: 2px;
+}
+footer{
+    background-color: papayawhip;
+    text-align: center;
+    word-spacing:normal;
+}
