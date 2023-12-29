@@ -19,7 +19,6 @@ h2{
     font-weight: 300;
     color:rgb(20, 0, 15);
 }
-
 .experience{
     display:block;
     background-color: azure;
@@ -67,4 +66,25 @@ footer{
     background-color: papayawhip;
     text-align: center;
     word-spacing:normal;
+}
+.navmenu{
+    background-color:darksalmon;
+    overflow: hidden;
+}
+.navmenu a {
+float: left;
+display:block;
+color:midnightblue;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+.navmenu a:hover{
+    background-color: papayawhip;
+    color: black;
+}
+.navmenu a.active{
+    background-color:bisque;
+    color:midnightblue;
 }
