@@ -9,38 +9,41 @@
         <meta name="author" content="Annah Nyarangi">
         <link href="css/index.css" rel="stylesheet" />
     </head>
-    <div class = "navmenu">
+    <div id = "navmenu">
         <a class="active" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#Skills">Skills</a>
-        <a href="#connect">Contact Us</a>
+        <a href="#skills">Skills</a>
+        <a href="#connect">Connect</a>
+        <a href="#leave-message">Leave A Message</a>
+
     </div>
     <body>
-        <section> 
+        <section id ="about"> 
             <h1> Annah Nyarangi</h1>
             <h2>About</h2>
-            <p>I am a beginner programmer, currently working on JavaScript; I look forward to learning more. <br>
-            Currently working as a nursing assistant 
-            and hoping to make a career switch from healthcare to Information Technology.
+            <p>I am a beginner programmer, currently working on JavaScript, HTML and CSS; I look forward to learning more. <br>
+            I have been working as a nursing assistant for close to a decade now. I am excited about learning programming
+            and I am hoping to make a career switch from healthcare to Information Technology.
             </p>    
         </section>
-        <section> 
+        <section id = "experience"> 
             <h2>Experience</h2>
-            <ul>
-                <li class="experience">2015 - Current </li>
-                <li class="experience" >Nursing Assistant, GI Acute Care </li>
-            </ul>
+            <div class="flex-container">
+                <div class="experience">2015 - Now: Nursing Assistant, GI Acute Care</div>
+                <div class="experience" > 2014 - 2015: Nursing Assistant, Franklin Health</div>
+                <div class="experience" >2012 - 2014: IT Support, WP SACCO </div>
+            </div>
         </section>
         <section id = "skills">
             <h2> Skills</h2>
-            <ul></ul>
+            <div></div>
         </section>
-        <section>
+        <section id ="connect">
             <h2>Connect</h2>
             <a href="https://github.com/anyarangi" target="_blank">Visit my GitHub page!</a>  
         </section>
-        <section>
+        <section id = "leave-message">
             <h2>Leave a Message</h2>
             <form name="leave_message">
                 <label for="usersName">Your Name:</label><br>

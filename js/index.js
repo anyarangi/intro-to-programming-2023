@@ -10,7 +10,7 @@ const skills = [
     "CSS",
 ];
 const skillsSection = document.querySelector('#skills');
-const skillsList = skillsSection.querySelector('ul');
+const skillsList = skillsSection.querySelector('div');
 for ( let i = 0; i < skills.length; i++) {
     const skill =document.createElement('li');
     skill.innerText = skills[i];
@@ -40,3 +40,15 @@ messageForm.addEventListener('submit', function (event) {
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
 });
+
+window.onscroll=function(){myFunction()};
+var navmenu=document.getElementById("navmenu");
+var sticky=navmenu.offsetTop;
+
+function myFunction(){
+    if(window.pageYOffset>=sticky){
+        navmenu.classList.add("sticky")
+    } else {
+        navmenu.classList.remove("sticky");
+    }
+}
