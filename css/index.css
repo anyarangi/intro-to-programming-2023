@@ -2,10 +2,12 @@ body{
     background-color: rgb(235, 202, 221);
     color: rgb(1, 1, 39);
     font-family: "Courier New", monospace;
+    margin: 0;
 }
 section{
-    padding: 5px 10px 5px 10px;
-    margin: 5px 10px 5px 10px;
+    padding: 75px;
+    margin: 20px 0px 0px 0px;
+    scroll-margin-top: 75px;
 }
 h1{
     font-family: "Copperplate", monospace;
@@ -19,10 +21,30 @@ h2{
     font-weight: 300;
     color:rgb(20, 0, 15);
 }
+p{
+    margin-bottom: 0;
+}
 
-.experience{
-    display:block;
+#experience{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.flex-container{
+    width: calc(50% -17px);
+    margin-bottom: 20px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: azure;
+    border: 1px solid rgb(246, 136, 114);
+    border-radius: 8px;
+}
+@media(max-width:800px){
+    .flex-container{
+        flex-direction: column;
+    }
 }
 #skills{
     display: block;
@@ -53,18 +75,70 @@ textarea{
     resize: none;
     font-size: 20px;
 }
-#messages{
+#connect{
+    display: block;
+    font-family: "Sevillana", monospace;
+}
+#leave-message{
+    width: 100%;
     display: inline-block;
     font-family: "Sevillana", monospace;
+    background-color: rgb(246, 136, 114);
 }
 input [type=button], [type=submit], [type=remove]{
     padding: 5px;
     background-color: rgb(243, 75, 120);
-    color: #000;
+    color: #580724;
     border: 2px;
 }
 footer{
     background-color: papayawhip;
     text-align: center;
     word-spacing:normal;
+    margin-bottom: 0;
 }
+/*style navmenu*/
+#navmenu{
+    background-color:darksalmon;
+    overflow: hidden;
+    padding: 16px;
+    padding-bottom: 5px;
+}
+/*navmenu links*/
+#navmenu a {
+float: left;
+display:block;
+color:midnightblue;
+text-align: center;
+padding: 20px;
+text-decoration: none;
+font-size: 17px;
+}
+#navmenu a:hover{
+    background-color: papayawhip;
+    color: black;
+}
+#navmenu a.active{
+    background-color:bisque;
+    color:midnightblue;
+}
+/*page content*/
+.content{
+    padding: 20px;
+}
+/*Sticky class added to the navmenu with JS when it reaches its scroll position*/
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top:60px;
+}
+@media screen and (max-width: 500px){
+    #navmenu a {
+        float: none;
+        display: block;
+    }
+}
+
